@@ -75,5 +75,5 @@ services:
             - GTN_ADDR=http://gluetun-airdcpp:8000
             - DISCORD_WEBHOOK_URL=${AIRDCPP_GLUETUN_SYNC_WEBHOOK_URL}
         networks:
-            traefik_proxy:
+            proxy:
 ```
