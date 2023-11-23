@@ -77,3 +77,8 @@ services:
         networks:
             proxy:
 ```
+
+## Credits
+- [fieu/discord.sh](https://github.com/fieu/discord.sh) for the Discord webhook notification functionality
+- [qdm12/gluetun](https://github.com/qdm12/gluetun) for Gluetun and its excellent documentation
+- [airdcpp/airdcpp-webclient](https://github.com/airdcpp-web/airdcpp-webclient) and [gangefors/docker-airdcpp-webclient](https://github.com/gangefors/docker-airdcpp-webclient) for AirDC++ and the dockerized AirDC++ container
