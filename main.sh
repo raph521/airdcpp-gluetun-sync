@@ -24,8 +24,7 @@ gtn_addr="${GTN_ADDR:-http://localhost:8000}" # ex. http://10.0.1.48:8000
 log_every_check=${LOG_EVERY_CHECK:-false}
 
 print_datetime () {
-    echo ""
-    echo "[$(date +'%Y-%m-%d %H:%M:%S %z')]"
+    printf "\n[$(date +'%Y-%m-%d %H:%M:%S %z')]\n"
 }
 
 #

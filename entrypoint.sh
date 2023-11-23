@@ -18,7 +18,7 @@
 set -e
 
 if [ ! "$LOG_EVERY_CHECK" = true ]; then
-    echo "[$(date +'%Y-%m-%d %H:%M:%S %z')]"
+    printf "\n[$(date +'%Y-%m-%d %H:%M:%S %z')]\n"
     echo "First check will be logged; subsequent logging will only occur on settings update"
 fi
 
@@ -33,7 +33,7 @@ cron_entry="${sanitized_cron_schedule} /app/main.sh"
 echo "$cron_entry" | crontab -
 
 echo ""
-echo "[$(date +'%Y-%m-%d %H:%M:%S %z')]"
+printf "\n[$(date +'%Y-%m-%d %H:%M:%S %z')]\n"
 echo "Starting cron daemon, crontab is:"
 crontab -l
 /usr/sbin/crond -f -l 8
