@@ -30,7 +30,7 @@ print_datetime () {
 #
 # Get public IP and forwarded port from Gluetun
 #
-gtn_port_number=$(curl --fail --silent --show-error  ${gtn_addr}/v1/openvpn/portforwarded | jq '.port')
+gtn_port_number=$(curl --fail --silent --show-error  ${gtn_addr}/v1/portforward | jq '.port')
 gtn_ip_address=$(curl --fail --silent --show-error ${gtn_addr}/v1/publicip/ip | jq --raw-output '.public_ip')
 if [ ! "$gtn_port_number" ] || [ "$gtn_port_number" = "0" ]; then
     print_datetime
